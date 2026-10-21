@@ -1,0 +1,20 @@
+{
+  "name": "recipelogger.com",
+  "interface": {
+    "displayName": "RecipeLogger Plugins"
+  },
+  "plugins": [
+    {
+      "name": "recipelogger",
+      "source": {
+        "source": "local",
+        "path": "./plugins/recipelogger"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

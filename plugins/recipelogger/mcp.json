@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "recipelogger": {
+      "type": "streamable-http",
+      "url": "https://recipelogger.com/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "cimd"
+            },
+            "resource": "https://recipelogger.com/mcp",
+            "defaultScopes": [
+              "openid",
+              "profile",
+              "email",
+              "offline_access",
+              "recipes:read",
+              "recipes:write",
+              "shopping:read",
+              "shopping:write",
+              "mealplans:read",
+              "mealplans:write",
+              "stores:read"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

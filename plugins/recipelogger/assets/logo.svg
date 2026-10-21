@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-label="RecipeLogger logo mark">
+  <title>RecipeLogger mark</title>
+  <!-- White recipe log-card with kauri bookmark ribbon and fern check on deep fern -->
+  <rect width="48" height="48" rx="10" fill="#41624f"/>
+  <rect x="11" y="8" width="26" height="32" rx="3" fill="#ffffff"/>
+  <path d="M28 8h7v13l-3.5-3.5L28 21z" fill="#a88f75"/>
+  <rect x="15" y="15" width="9" height="3" rx="1.5" fill="#c9dccf"/>
+  <rect x="15" y="22" width="15" height="3" rx="1.5" fill="#c9dccf"/>
+  <rect x="15" y="29" width="12" height="3" rx="1.5" fill="#c9dccf"/>
+  <path d="M26.5 33.5l2.8 2.8 5-5.2" stroke="#41624f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
