@@ -7,7 +7,10 @@
 - Write documentation and commit messages in English.
 - Never commit credentials, signing keys, tokens, or personal data.
 - Inspect the diff and stage explicit paths before committing.
-- Commit, push, tag, or publish only when requested by the user.
+- After completing and validating a change, commit it on `main` automatically.
+  Split independent changes into small, meaningful Conventional Commits. Do not
+  include unrelated user changes unless requested, and do not commit unfinished work.
+- Push, tag, or publish only when requested by the user.
 - Never force-push `main` or rewrite published history.
 
 ## Commits
@@ -37,6 +40,8 @@ Never claim checks passed unless they were run.
 - `.agents/plugins/marketplace.json`: marketplace catalog and installation policy.
 - `plugins/<name>/plugin.json`: plugin identity and listing.
 - `plugins/<name>/mcp.json`: remote MCP connection and OAuth configuration.
+- `plugins/<name>/.codex-plugin/plugin.json`: Codex compatibility metadata and MCP reference.
+- `plugins/<name>/.mcp.json`: Codex compatibility MCP connection.
 - `plugins/<name>/assets/`: plugin icons and brand assets.
 - `README.md`: public purpose, features, and installation instructions.
 
@@ -46,6 +51,9 @@ focused on plugin packages and the marketplace.
 ## Validation
 
 - Validate edited JSON and check marketplace paths and referenced assets.
+- Keep portable and Codex compatibility manifests consistent in identity and
+  version, and keep their MCP endpoints synchronized. Inline OpenAI extensions
+  shadow the compatibility manifest; preserve the intended loading path.
 - Review authentication scopes and endpoint changes carefully.
 - For functional plugin changes, verify installation, OAuth, tool discovery,
   and a read-only request in a supported client when available.
