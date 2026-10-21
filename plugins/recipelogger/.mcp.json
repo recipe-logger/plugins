@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "recipelogger": {
+      "type": "http",
+      "url": "https://recipelogger.com/mcp"
+    }
+  }
+}
